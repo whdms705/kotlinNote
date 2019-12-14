@@ -5,6 +5,8 @@ fun main(args: Array<String>) {
     /*var signatureDrink = "맥주"
     signatureDrink = null*/
 
+
+
     // String? 타입은 문자열값이나 null을 저장할 수 있다.
     /*var beverage = readLine()
     beverage = null
@@ -32,15 +34,19 @@ fun main(args: Array<String>) {
         }else{
             "맥주"
         }
-    }*/
+    }
+
+    println(beverage)*/
 
 
 
 
 
     //두번째 방법 : non-null 단언 연산자 : !!
-    /*var beverage = readLine()!!.capitalize()
-    println(beverage)*/
+    var beverage = readLine()!!.capitalize()
+
+    //beverage= null
+    println(beverage)
 
 
 
@@ -73,11 +79,11 @@ fun main(args: Array<String>) {
     println(beverageServed)*/
 
 
-    var beverage = readLine()
+    /*var beverage = readLine()
 
     beverage?.let {
         beverage = it.capitalize()
-    } ?: println("beverage가 null 입니다.")
+    } ?: println("beverage가 null 입니다.")*/
 
 
 
