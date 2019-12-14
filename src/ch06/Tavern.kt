@@ -16,20 +16,68 @@ fun main(args: Array<String>) {
 
     println(beverage)*/
 
-    // 안전 호출연산자 ?.
+
+
+
+
+    // 첫번째 방법 : 안전 호출 연산자 : ?.
     // 힘수 호출에 사용되는 변수나 다른 함수(여기서는 readLine)의 반환값이 null이 아닐 때만 해당 함수가 안전하개
     // 호출되므로 nullPointException을 방지 할 수 있다.
     //var beverage  = readLine()?.capitalize();
 
     // 안전 호출 연산자와 함께 let 함수 사용하기
-    var beverage = readLine()?.let {
+    /*var beverage = readLine()?.let {
         if(it.isNotBlank()){
             it.capitalize()
         }else{
             "맥주"
         }
+    }*/
+
+
+
+
+
+    //두번째 방법 : non-null 단언 연산자 : !!
+    /*var beverage = readLine()!!.capitalize()
+    println(beverage)*/
+
+
+
+    //세번째 방법 : 값이 null인지 if로 검사하기
+    /*var beverage = readLine()
+
+    beverage = null
+
+    if(beverage != null){
+        beverage = beverage.capitalize()
+    }else{
+        println("beverage가 null입니다.")
     }
 
+    beverage?.capitalize()?.plus(",large")*/
+
+
+
+    // null 복합연산자
+    /*var beverage = readLine()
+    beverage = null
+
+    if(beverage != null){
+        beverage = beverage.capitalize()
+    }else{
+        println("beverage가 null입니다.")
+    }
+
+    val beverageServed: String = beverage ?: "맥주"
+    println(beverageServed)*/
+
+
+    var beverage = readLine()
+
+    beverage?.let {
+        beverage = it.capitalize()
+    } ?: println("beverage가 null 입니다.")
 
 
 
