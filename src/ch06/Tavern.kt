@@ -2,7 +2,7 @@ package ch06
 
 fun main(args: Array<String>) {
     // signatureDrink 변수는 null 지정 불가능 타입이므로 컴파일러 null 값의 저장을 막는다.
-    /*var signatureDrink = "맥주"
+    /*var signatureDrink  = "맥주"
     signatureDrink = null*/
 
 
@@ -11,6 +11,7 @@ fun main(args: Array<String>) {
     /*var beverage = readLine()
     beverage = null
     println(beverage)*/
+
 
     // capitalize() 문자열의 첫 자만 대문자로 바꿔 준다.
     // realLine의 반환 타입이 String? 이므로 null 값을 반환할 수 있기 때문에 capitalize() 호출 못하게 막음
@@ -46,7 +47,7 @@ fun main(args: Array<String>) {
     var beverage = readLine()!!.capitalize()
 
     //beverage= null
-    println(beverage)
+    //println(beverage)
 
 
 
