@@ -29,22 +29,29 @@ fun main(args: Array<String>) {
     //var beverage  = readLine()?.capitalize();
 
     // 안전 호출 연산자와 함께 let 함수 사용하기
-    /*var beverage = readLine()?.let {
+    var beverage = readLine()?.let {
         if(it.isNotBlank()){
-            it.capitalize()
+            var check = false
         }else{
-            "맥주"
+            var check2 = false
         }
     }
 
-    println(beverage)*/
+    println(beverage)
 
 
+    var beverage2 = readLine()?.let {
+        if(it.isNotBlank()){
+            var check = false
+        }else{
+            var check2 = false
+        }
+    }
 
 
 
     //두번째 방법 : non-null 단언 연산자 : !!
-    var beverage = readLine()!!.capitalize()
+    //var beverage = readLine()!!.capitalize()
 
     //beverage= null
     //println(beverage)
