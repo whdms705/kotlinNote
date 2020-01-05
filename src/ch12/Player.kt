@@ -2,14 +2,23 @@ package ch12
 
 //? 필드별로 커스텀 마이징하고 싶다면?
 
-class Player {
+ class Player {
+    // 각각 커스터 마이징(name) 가능
     var name = "madrigal"
         get() = field.capitalize()
         set(value){
             field = value.trim()
         }
 
+    // 각각 커스터 마이징(healthPoints) 가능
     var healthPoints = 89
+        get() = field*2;
+        set(value){
+            field = field*3;
+        }
+
+
+
     val isBlessed = true
     private val isImmortal = false
 

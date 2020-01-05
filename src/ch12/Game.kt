@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
 
     player.name = "eunho"
     println(player.name)
+    println(player.healthPoints)
 }
 
 private fun printPlayerStatus(plyer : Player){
