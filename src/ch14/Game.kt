@@ -6,4 +6,8 @@ fun main(args: Array<String>) {
     println(currentRoom.description())
     println(currentRoom.load())
 
+    var subCurrentRoom = TownSquare()
+    println(subCurrentRoom.description())
+    println(subCurrentRoom.load())
+
 }
