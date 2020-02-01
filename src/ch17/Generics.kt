@@ -1,6 +1,6 @@
 package ch17
 
-class LootBox<T> (item:T){
+class LootBox<T> (vararg item:T){
     var open = false
     private var loot: T = item
 
@@ -27,5 +27,6 @@ fun main(args: Array<String>) {
     lootBoxOne.fetch()?.run {
         println("$name 을 LootBox에서 꺼냈습니다.")
     }
+
 
 }
